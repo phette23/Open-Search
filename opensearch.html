@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head profile="http://a9.com/-/spec/opensearch/1.1/">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Open Search Test</title>
+	<meta name="description" content="Test page for Open Search">
+	<meta name="viewport" content="width=device-width">
+	<!-- this is the magic sauce right here -->
+	<link rel="search"
+           type="application/opensearchdescription+xml"
+           href="http://www.chesapeake.edu/library/open-search/opensearch.xml"
+           title="ChesCat" />
+</head>
+<body>
+<h1>Open Search</h1>
+<p>...using Chesapeake College's Polaris OPAC as an example.</p>
+<h1>JavaScript Test</h1>
+<!-- notes:
+	While the spec says the AddSearchProvider URL can be relative or absolute, Firefox appears to choke on relative URLs, saying "cannot install". Chrome also has trouble but fails totally silently.
+	Google Chrome won't auto-suggest a keyword for your search, should research how to do that.
+	Internet Explorer needs a .ico for the smaller image or it will use a generic spyglass icon to represent the search engine.
+	The title attribute in the link[rel=search] doesn't become the name of the search engine when it's installed in the browser, rather the ShortName element in the Open Search XML does.
+	Open Search specification (1.1): http://www.opensearch.org/Specifications/OpenSearch/1.1
+	-->
+<p>If you <a href="#" onclick="window.external.AddSearchProvider('http://www.chesapeake.edu/library/open-search/opensearch.xml');return false;">click here</a>, a pop-up should prompt you to add the search engine to your browser.</p>
+</body>
+</html>

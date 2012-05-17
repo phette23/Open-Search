@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+   <ShortName>ChesCat</ShortName>
+   <Description>Find books, DVDs, e-books, &amp; more at the Chesapeake College Library.</Description>
+   <Tags>library college opac card-catalog community-college Eastern-Shore Chesapeake-College education books</Tags>
+   <Contact>ephetteplace@chesapeake.edu</Contact>
+   <Url type="text/html"
+        template="http://catalog.chesapeake.edu/view.aspx?keyword={searchTerms}"/>
+   <LongName>Chesapeake College Library Catalog</LongName>
+   <Image height="64" width="64" type="image/png">http://www.chesapeake.edu/library/open-search/cc-os64.png</Image>
+   <Image height="16" width="16" type="image/x-icon">http://www.chesapeake.edu/library/open-search/opensearch.ico</Image>
+   <Query role="example" searchTerms="Mark Twain" />
+   <Developer>Open Search Description: Eric Phetteplace, Emerging Technologies Librarian, Chesapeake College | ChesCat search engine: Polaris Library Systems</Developer>
+   <Attribution>
+     Polaris Copyright 2010, Polaris Library Systems
+   </Attribution>
+   <SyndicationRight>open</SyndicationRight>
+   <AdultContent>false</AdultContent>
+   <Language>en-us</Language>
+   <OutputEncoding>UTF-8</OutputEncoding>
+   <InputEncoding>UTF-8</InputEncoding>
+ </OpenSearchDescription>
